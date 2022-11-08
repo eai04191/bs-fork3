@@ -18,6 +18,7 @@ function Header() {
   const headerItems = [
     { href: "/", label: "Home" },
     { href: "/news", label: "News" },
+    { href: "/students", label: "Students" },
   ];
   return (
     <header className="sticky top-0 flex h-16 w-full justify-center bg-gray-800 shadow-lg">

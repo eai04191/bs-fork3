@@ -9,6 +9,10 @@ module.exports = {
         extend: {
             colors: {
                 "theme-cyan": "#00d7fb",
+                "student-red": "#94090f",
+                "student-blue": "#1f6095",
+                "student-yellow": "#be890a",
+                "student-gray": "#171f26",
             },
             typography: ({ theme }) => ({
                 cyan: {
