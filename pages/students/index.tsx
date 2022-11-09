@@ -78,7 +78,7 @@ function StudentCard({ student }: { student: Student }) {
           <p className="text-2xl">{student.FullName}</p>
         </div>
       </div>
-      <div className="flex gap-2">
+      <div className="mt-auto flex gap-2">
         <Pill
           className={clsx(
             student.Atk === "爆発" && "bg-student-red",
@@ -113,7 +113,7 @@ function Pill({
       {...props}
       className={overrideTailwindClasses(
         clsx(
-          "flex overflow-hidden rounded-full bg-student-gray p-0.5 px-4 text-white",
+          "flex overflow-hidden break-keep rounded-full bg-student-gray p-0.5 px-4 text-white",
           props.className
         )
       )}
@@ -212,7 +212,7 @@ export default function StudentsPage({
         </ButtonWrapper>
 
         <p>{filteredStudents.length} students</p>
-        <div className="grid grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {filteredStudents.map((student) => (
             <StudentCard student={student} key={student.FullName} />
           ))}
