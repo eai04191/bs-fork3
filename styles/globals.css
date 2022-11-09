@@ -9,8 +9,7 @@
 
 html,
 body,
-body > div,
-body > div > div {
+#__next {
     @apply m-0 min-h-screen bg-gray-100 p-0;
 }
 

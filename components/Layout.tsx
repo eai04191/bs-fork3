@@ -70,7 +70,7 @@ export default function Layout({
   className?: string;
 }) {
   return (
-    <div className={className}>
+    <>
       <Head>
         <title>BlueScripture</title>
         <link rel="icon" href="/favicon.ico" />
@@ -81,6 +81,6 @@ export default function Layout({
       <Header />
       <main>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 }
